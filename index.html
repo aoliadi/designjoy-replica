@@ -22,7 +22,7 @@
                 <p class="hero__main--paragraph">
                     Unlimited design subscriptions to scale your business.
                 </p>
-                <a href="#" class="btn btn--cta hero__main--btn">
+                <a href="#" class="btn btn--primary hero__main--btn">
                     See pricing
                 </a>
                 <small class="hero__main--small">
@@ -41,7 +41,7 @@
                 </div>
             </aside>
         </section> <!--hero__container-->
-        <img src="./images/arrow_3.svg" alt="" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)" width="120" >
+        <img src="./images/arrow_3.svg" alt="" class="animation1" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)" width="120" >
     </header> <!--header-->
     <section class="why-us__container">
         <h2 class="why-us__header">
@@ -87,7 +87,7 @@
         </ul>
     </section> <!--why-us__container-->
     <section class="feature__container" style="position: relative">       
-        <img src="./images/Line.svg" alt="" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
+        <img src="./images/Line.svg" alt="" class="animation2" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
         <h2 class="feature__header">
             Features you'll love
         </h2>
@@ -172,8 +172,8 @@
         </div> <!--flex-container-->
     </section> <!--feature__container-->
     <section class="membership__container" style="position: relative">
-        <img src="./images/Line.svg" alt="" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
-        <img src="./images/Line.svg" alt="" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)">
+        <img src="./images/Line.svg" alt="" class="animation2" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
+        <img src="./images/Line.svg" alt="" class="animation1" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)">
         <h2 class="membership__header">
             Membership benefits 
         </h2>
@@ -239,7 +239,7 @@
                 </p>
             </li>
         </ul>
-        <a href="#" class="btn btn--cta pricing-btn">
+        <a href="#" class="btn btn--primary pricing-btn">
             See pricing
         </a>
     </section> <!--membership__container-->
@@ -329,7 +329,7 @@
                     </div> <!--our-work__list-bottom-->
                 </li>
             </ul>
-            <a href="#" class="btn btn--cta our-work__btn">
+            <a href="#" class="btn btn--primary our-work__btn">
                 See more work
             </a>
         </main>
@@ -347,8 +347,8 @@
         </aside>
     </section> <!--our-work__container-->
     <section class="other-services__container" style="position: relative">
-        <img src="./images/Line.svg" alt="" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
-        <img src="./images/Line.svg" alt="" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)">
+        <img src="./images/Line.svg" alt="" class="animation2" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
+        <img src="./images/Line.svg" alt="" class="animation1" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)">
         <h2 class="other-services__header">
             Apps, websites, logos and more!
         </h2>
@@ -359,6 +359,7 @@
             <li class="other-services__list-item pro-service pro-service-pro">Mobile apps</li>
             <li class="other-services__list-item">Direct mail</li>
             <li class="other-services__list-item">Trade show banner</li>
+            <li class="other-services__list-item">Blog graphics</li>
             <li class="other-services__list-item">Infographics</li>
             <li class="other-services__list-item">Email graphics</li>
             <li class="other-services__list-item">Banner ads</li>
@@ -378,25 +379,121 @@
             <li class="other-services__list-item">Digital ads</li>
         </ul>
     </section> <!--other-services__container-->
-    <section class="">
-        <header class="">
-            <h2 class="">
+    <section class="pricing__overall-container">
+        <header class="pricing__header-container">
+            <h2 class="pricing__header">
                 Fair, simple pricing for all
             </h2>
-            <p class="">
+            <p class="pricing__sub-header">
                 Pricing built for businesses of all sizes. Always know what you'll pay.
             </p>
-            <img src="./images/fair-pricing.png" alt="illustration" class="">
+            <img src="./images/fair-pricing.png" alt="illustration" class="pricing__illustration" width="50%">
         </header>
-        <main class="">
-            <img src="" alt="$" class="">
+        <section class="pricing__flex-container">
+            <article class="pricing__flex-flex1">
+                <img src="" alt="$" class="">
+                <h3 class="pricing__flex-header">
+                    Our guarantee
+                </h3>
+                <p class="pricing__flex-sub-header">
+                    We know trying a new service out can be scary. That's why we offer a 7 day money-back guarantee if you aren't happy with our work. No questions asked.
+                </p>
+            </article>
+            <article class="pricing__flex-flex2">
+                <h3 class="pricing__flex-header">
+                    Essential
+                </h3>
+                <p class="pricing__flex-sub-header">
+                    Great for small businesses with basic design needs.
+                </p>
+                <a class="btn btn--secondary pricing__flex-btn">
+                    Try for a week
+                </a>
+                <p class="pricing__flex-price">
+                    <span class="price price--strikethrough">$999</span>
+                    <span class="price price--big">$849</span>/month
+                    <br>
+                    <span class="price--save">Save 15% for life!</span>
+                </p>
+                <hr>
+                <ul class="pricing__flex-features">
+                    <p class="">What's included:</p>
+                    <li class="">Unlimited requests</li>
+                    <li class="">Unlimited revisions</li>
+                    <li class="">Free stock photos</li>
+                    <li class="">Native source files included</li>
+                    <li class="">Unlimited team members</li>
+                    <li class="">One brand profile</li>
+                    <li class="">Cancel anytime</li>
+                </ul>
+            </article>
+            <article class="pricing__flex-flex3">
+                <h3 class="pricing__flex-header">
+                    Pro
+                </h3>
+                <p class="pricing__flex-sub-header">
+                    Great for businesses with interface design needs.
+                </p>
+                <a class="btn btn--primary pricing__flex-btn">
+                    Try for a week
+                </a>
+                <p class="pricing__flex-price">
+                    <span class="price price--strikethrough">$1,340</span>
+                    <span class="price price--big">$1,149</span>/month
+                    <br>
+                    <span class="price--save">Save 15% for life!</span>
+                </p>
+                <hr>
+                <ul class="pricing__flex-features">
+                    <p class="">What's included:</p>
+                    <li class="bold">All the Essential plan features</li>
+                    <li class="">Website &amp; app design</li>
+                    <li class="">Logo design</li>
+                    <li class="">Presentation deck design</li>
+                    <li class="">Unlimited brand profiles</li>
+                </ul>
+            </article>
+            <article class="pricing__flex-flex4">
+                <h3 class="pricing__flex-header">
+                    Premium
+                </h3>
+                <p class="pricing__flex-sub-header">
+                    Great for businesses looking for a custom plan.
+                </p>
+                <a class="btn btn--secondary pricing__flex-btn">
+                    Try for a week
+                </a>
+                <p class="pricing__flex-price">
+                    <span class="price price--strikethrough">$1,999</span>
+                    <span class="price price--big">$1,699</span>/month
+                    <br>
+                    <span class="price--save">Save 15% for life!</span>
+                </p>
+                <hr>
+                <ul class="pricing__flex-features">
+                    <p class="">What's included:</p>
+                    <li class="bold">All the Essential and Pro plan features</li>
+                    <li class="">Front-end development with Webflow*</li>
+                    <li class="">Real-time collaboration via Slack</li>
+                    <p>* Does not include a Webflow subscription</p>
+                </ul>
+            </article>
+        </section>
+        section
+<!--
+        <article class="pricing__flex3">
+           <small class="label">most popular</small>
             <h3 class="">
-                Our guarantee
+                Pro
             </h3>
             <p class="">
-                We know trying a new service out can be scary. That's why we offer a 7 day money-back guarantee if you aren't happy with our work. No questions asked.
+                Great for businesses with interface design needs.
             </p>
-        </main>
+            <a href="">
+                Try for a week
+            </a>
+        </article>
+-->
     </section>
 
 
