@@ -10,8 +10,40 @@
 </head>
 <body>
 
-    <header class="header" style="position: relative">
-        <nav class="nav__container">
+    <header class="header" style="position: relative;">
+        <nav class="navbar">
+            <ul class="nav__list-container">
+                <li class="nav__list-item">
+                    <a href="" class="nav__link">
+                        how it works
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="" class="nav__link">
+                        our work
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="" class="nav__link">
+                        pricing
+                    </a>
+                </li>
+                <li class="nav__list-item  nav__list-item--margin-auto">
+                    <a href="" class="nav__link">
+                        <img src="./images/design-joy-white.svg" alt="logo" class="" width="100">
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="" class="nav__link">
+                        log in
+                    </a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="" class="nav__link">
+                        get started
+                    </a>
+                </li>
+            </ul>
             <!--navigations-->
         </nav> <!--nav__container-->
         <section class="hero__container">
@@ -31,14 +63,23 @@
             </main>
             <aside class="hero__aside">
                <img src="./images/hero-illustration.jpg" alt="illustration image" class="img hero__aside--illustration">
-                <!--5 images-->
-                <div class="hero__partners">
-                    <img src="images/lang.svg" alt="" class="partners__logo" width="100" >
-                    <img src="images/flipreach.svg" alt="" class="partners__logo" width="100" >
-                    <img src="images/soundstripe.svg" alt="" class="partners__logo" width="100" >
-                    <img src="images/cometchat.svg" alt="" class="partners__logo" width="100" >
-                    <img src="images/failory.svg" alt="" class="partners__logo" width="100" >
-                </div>
+                <ul class="logo-list__container">
+                    <li class="logo-list__item">
+                        <img src="images/lang.svg" alt="" class="logo-list__img" width="100" >
+                    </li>
+                    <li class="logo-list__item">
+                        <img src="images/flipreach.svg" alt="" class="logo-list__img" width="100" >
+                    </li>
+                    <li class="logo-list__item">
+                        <img src="images/soundstripe.svg" alt="" class="logo-list__img" width="100" >
+                    </li>
+                    <li class="logo-list__item">
+                        <img src="images/cometchat.svg" alt="" class="logo-list__img" width="100" >
+                    </li>
+                    <li class="logo-list__item">
+                        <img src="images/failory.svg" alt="" class="logo-list__img" width="100" >
+                    </li>
+                </ul>
             </aside>
         </section> <!--hero__container-->
         <img src="./images/arrow_3.svg" alt="" class="animation1" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)" width="120" >
@@ -86,7 +127,7 @@
             </li>
         </ul>
     </section> <!--why-us__container-->
-    <section class="feature__container" style="position: relative">       
+    <section class="feature__container" style="position: relative;">       
         <img src="./images/Line.svg" alt="" class="animation2" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
         <h2 class="feature__header">
             Features you'll love
@@ -171,7 +212,7 @@
             </div>
         </div> <!--flex-container-->
     </section> <!--feature__container-->
-    <section class="membership__container" style="position: relative">
+    <section class="membership__container" style="position: relative;">
         <img src="./images/Line.svg" alt="" class="animation2" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
         <img src="./images/Line.svg" alt="" class="animation1" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)">
         <h2 class="membership__header">
@@ -253,7 +294,9 @@
             </h5>
             <ul class="our-work__list-container">
                 <li class="our-work__list-item">
-                    <img src="./images/work_2.png" alt="" width="100%">
+                    <div>
+                        <img src="./images/work_2.png" alt="" width="100%" height="100%">
+                    </div>
                     <div class="our-work__list-bottom">
                         <h5 class="our-work__list-header">
                             Financial App
@@ -272,7 +315,9 @@
                     </div> <!--our-work__list-bottom-->
                 </li>
                 <li class="our-work__list-item">
-                    <img src="./images/work_1.png" alt="" width="100%">
+                    <div>
+                        <img src="./images/work_1.png" alt="" width="100%">
+                    </div>
                     <div class="our-work__list-bottom">
                         <h5 class="our-work__list-header">
                             Brew
@@ -291,7 +336,9 @@
                     </div> <!--our-work__list-bottom-->
                 </li>
                 <li class="our-work__list-item">
-                    <img src="./images/work_3.png" alt="" width="100%">
+                    <div>
+                        <img src="./images/work_3.png" alt="" width="100%">
+                    </div>
                     <div class="our-work__list-bottom">
                         <h5 class="our-work__list-header">
                             Logo Ipsum
@@ -310,7 +357,9 @@
                     </div> <!--our-work__list-bottom-->
                 </li>
                 <li class="our-work__list-item">
-                    <img src="./images/work_4.png" alt="" width="100%">
+                    <div>
+                        <img src="./images/work_4.png" alt="" width="100%">
+                    </div>
                     <div class="our-work__list-bottom">
                         <h5 class="our-work__list-header">
                             Hang Tight
@@ -337,16 +386,26 @@
             <h3 class="our-work__aside-header">
                 Award-winning designs featured by
             </h3>
-            <div class="our-work__aside-clients">
-                <img src="./images/lapa-logo.svg" alt="lapa-logo" class="client-logo" width="100">
-                <img src="./images/land-book.png" alt="land-book-logo" class="client-logo" width="100">
-                <img src="./images/awwwards.svg" alt="awwwards-logo" class="client-logo" width="100">
-                <img src="./images/product-hunt.svg" alt="product-hunt-logo" class="client-logo" width="100">
-                <img src="./images/dribbble-logo.svg" alt="dribbble-logo" class="client-logo" width="100">
-            </div>
+            <ul class="logo-list__container">
+                <li class="logo-list__item">
+                    <img src="./images/lapa-logo.svg" alt="lapa-logo" class="logo-list__img" width="100">
+                </li>
+                <li class="logo-list__item">
+                    <img src="./images/land-book.png" alt="land-book-logo" class="logo-list__img" width="100">
+                </li>
+                <li class="logo-list__item">
+                    <img src="./images/awwwards.svg" alt="awwwards-logo" class="logo-list__img" width="100">
+                </li>
+                <li class="logo-list__item">
+                    <img src="./images/product-hunt.svg" alt="product-hunt-logo" class="logo-list__img" width="100">
+                </li>
+                <li class="logo-list__item">
+                    <img src="./images/dribbble-logo.svg" alt="dribbble-logo" class="logo-list__img" width="100">
+                </li>
+            </ul>
         </aside>
     </section> <!--our-work__container-->
-    <section class="other-services__container" style="position: relative">
+    <section class="other-services__container" style="position: relative;">
         <img src="./images/Line.svg" alt="" class="animation2" style="position: absolute; left: 50%; top: 0; transform: translate(50%, -50%)">
         <img src="./images/Line.svg" alt="" class="animation1" style="position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%)">
         <h2 class="other-services__header">
@@ -479,23 +538,126 @@
                 </ul>
             </article>
         </section>
-        section
-<!--
-        <article class="pricing__flex3">
-           <small class="label">most popular</small>
-            <h3 class="">
-                Pro
-            </h3>
-            <p class="">
-                Great for businesses with interface design needs.
+        <section class="pricing__flex-container--aside">
+            <article class="">
+                <h4 class="pricing__flex-header">
+                    Schedule a call
+                </h4>
+                <p class="pricing__flex-sub-header">
+                    Learn more about how Designjoy works and how we can help you.
+                </p>
+                <a href="" class="pricing__flex-link">
+                    Schedule now
+                </a>
+            </article>
+            <article class="">
+                <h4 class="pricing__flex-header">
+                    Annual pricing
+                </h4>
+                <p class="pricing__flex-sub-header">
+                    Get in touch with our sales team for discounted annual pricing.
+                </p>
+                <a href="" class="pricing__flex-link">
+                    Contact us
+                </a>
+            </article>
+        </section>
+    </section> <!--pricing__overall-container-->
+    <footer class="footer__container">
+        <section class="faq__container">
+            <h4 class="faq__question">
+                Is it truly unlimited design?
+            </h4>
+            <p class="faq__answer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error natus quae, dolores eligendi beatae temporibus accusamus voluptatibus consequatur omnis tempore accusantium porro deserunt odio est explicabo, consequuntur ipsam repellat velit, similique nulla sed labore inventore doloribus illum. Rem illo, sit, magnam impedit neque natus qui libero animi vel et enim!
             </p>
-            <a href="">
-                Try for a week
-            </a>
-        </article>
--->
-    </section>
-
+            <div style="text-align: center;">
+                <a href="" class="btn btn--faq">
+                    Have more questions?
+                </a>
+            </div>
+        </section> <!--faq__container-->
+        <aside class="faq__aside-container">
+            <h3 class="faq__aside-header">
+                Trusted by hundreds of brands
+            </h3>
+            <ul class="logo-list__container">
+                <li class="logo-list__item">
+                    <img src="images/footer-lang.svg" alt="" class="logo-list__img" width="100" >
+                </li>
+                <li class="logo-list__item">
+                    <img src="images/footer-flipreach.svg" alt="" class="logo-list__img" width="100" >
+                </li>
+                <li class="logo-list__item">
+                    <img src="images/footer-payrolled.svg" alt="" class="logo-list__img" width="100" >
+                </li>
+                <li class="logo-list__item">
+                    <img src="images/footer-cometchat.svg" alt="" class="logo-list__img" width="100" >
+                </li>
+                <li class="logo-list__item">
+                    <img src="images/footer-failory.svg" alt="" class="logo-list__img" width="100" >
+                </li>
+            </ul>
+        </aside> <!--faq__aside-container-->
+        <section class="footer__flex-container">
+            <div class="footer__flex1">
+                <h2 class="footer__flex1-header">
+                    Let's get started
+                </h2>
+                <p class="footer__flex1-sub-header">
+                    Try us risk-free for 7 days. Don't love us? Get your money back.
+                </p>
+                <a href="" class="btn btn--footer btn--secondary">
+                    See pricing
+                </a>
+            </div>
+            <ul class="footer__flex2">
+               <li class="footer__list-item bold">
+                   Navigation
+               </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        How it works
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Our work
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Pricing
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Contact us
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Log in
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Get started
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Terms &amp; conditions
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="" class="footer__link">
+                        Privacy policy
+                    </a>
+                </li>
+            </ul>
+        </section> <!--footer__flex-container-->
+    </footer> <!--footer__container-->
 
     
 
