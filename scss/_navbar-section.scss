@@ -1,0 +1,51 @@
+.header {
+//    background: url(../images/nav_1.png) -34% -25% no-repeat, url(../images/nav_2.png) 50% -40% no-repeat, url(../images/nav_3.png) right top no-repeat;
+//    @include bd;
+}
+
+.nav__ {
+    
+    &list- {
+    
+        &container {
+            font-size: 1rem;
+            padding: 1rem;
+            @include flex;
+            align-items: center;
+//            text-transform: uppercase;
+            font-variant: small-caps;
+
+        }
+
+        &item {
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            
+            &:first-of-type {
+                margin-left: 0;
+            }
+            
+            &:last-of-type {
+                margin-right: 0;
+            }
+            
+            &--margin-auto {
+                margin: auto;
+            }
+            
+        }
+    }
+    
+    &link {
+        color: $white-color;
+        
+        &:hover {
+            color: inherit;
+            text-decoration: underline;
+        }
+        
+    }
+}
+
+
+

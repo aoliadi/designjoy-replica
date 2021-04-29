@@ -1,0 +1,43 @@
+.other-services__ {
+    
+    &container {
+//        @include bd;
+//        text-align: center;
+        @extend %section-padding;
+        
+    }
+    
+    &header {
+        @extend %header-width;
+        @extend %header-mb;
+        @extend %margin-auto;
+        @extend %ta-center;
+    
+    }
+    
+    &list- {
+        
+        &container {
+            @include bd($bg-color);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            @extend %margin-auto;
+            @extend %container-width;
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        &item {
+//            @include bd;
+            flex: 0 1 30%;
+            min-width: 200px;
+            margin: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 2px solid $bg-color;
+            font-weight: $weight400;
+            font-size: 1rem;
+        }
+    }
+}

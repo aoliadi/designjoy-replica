@@ -1,0 +1,9 @@
+@mixin bd($color: blue) {
+    border: 2px solid $color
+}
+
+@mixin flex( $dir: row, $wrap: wrap ) {
+    display: flex;
+    flex-flow: $dir $wrap;
+    
+}

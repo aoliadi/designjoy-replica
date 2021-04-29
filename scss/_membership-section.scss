@@ -1,0 +1,50 @@
+.membership__ {
+    
+    &container {
+        @extend %section-padding;
+        text-align: center;
+    }
+    
+    &header {
+        @extend %header-width;
+        @extend %margin-auto;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    
+    &list- {
+        
+        &container {
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
+            @extend %container-width;
+            @extend %margin-auto;
+        }
+        
+        &item {
+            margin-bottom: 1.5rem;
+            flex: 0 1 350px;
+//            min-width: 200px;
+            padding: 1.5rem 0;
+            
+            > * {
+                width: 80%;
+                @extend %margin-auto;
+            }
+
+        }
+        
+        &header {
+            font-size: 1rem;
+            font-weight: $weight800;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        &desc {
+            font-size: 1rem;
+        }
+        
+    }
+} 

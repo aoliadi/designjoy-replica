@@ -1,0 +1,45 @@
+%container-width {
+    max-width: $container-width;
+}
+ 
+%header-width {
+    max-width: $header-width;
+}
+
+%font-muli {
+    font-family: 'Muli', sans-serif;
+}
+
+%font-fira {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+%white-font {
+    color: $white-color;
+}
+
+%section-padding {
+    padding: 8rem 1.5rem;
+}
+
+%margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%ta-center {
+    text-align: center;
+}
+
+%header-mb {
+    margin-bottom: 20px;
+}
+
+%labels {
+    font-variant: small-caps;
+    padding: 0 0.5rem;
+    border-radius: 50px;
+    font-weight: $weight700;
+    font-size: 1rem;
+    margin-left: 1rem;
+}

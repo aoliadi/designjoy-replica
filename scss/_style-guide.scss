@@ -1,0 +1,131 @@
+$bg-color: #F6EEEA;
+$cta-color: #80376B;
+$white-color: #ffffff;
+$black-color: #000000;
+$btn-bg-color: #e1ced4;
+$feature-color: #e1eaf4;
+
+//$weight200: 200;
+$weight400: 400;
+$weight700: 700;
+$weight800: 800;
+
+$container-width: 1240px;
+$header-width: 570px;
+
+body {
+    color: $black-color;
+}
+
+.header, .pricing__overall-container {
+    background-color: $bg-color;
+}
+
+.why-us__container {
+//    background-color: red;
+//    background-color: $white-color;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 220px;
+    @extend %ta-center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+} 
+
+.btn--primary {
+    background-color: $cta-color;
+    @include bd($cta-color)
+//    border-color: ;
+    @extend %white-font;
+    box-shadow: rgba(128, 55, 107, 0.22) 6px 6px 0px 0px;
+
+    &:hover {
+        background-color: rgb(104, 39, 85);
+        border-color: rgb(104, 39, 85);
+    }
+} 
+
+.btn--secondary {
+    background-color: $white-color;
+    color: $cta-color;
+    @include bd($cta-color);
+    box-shadow: rgba(128, 55, 107, 0.22) 6px 6px 0px 0px;
+
+    &:hover {
+        background-color: $cta-color;
+        @extend %white-font;
+    }
+}
+
+.btn--faq {
+    @include bd($white-color);
+    @extend %white-font;
+}
+
+.btn--footer {
+//    @include bd($white-color);
+    border: none;
+    box-shadow: none;
+}
+
+.pro-service {
+//    @include bd;
+    position: relative;
+    
+    &::after {
+        position: absolute;
+        right: 5%;
+        @extend %labels;
+    }
+    
+    &-pro::after {
+        content: "pro";
+        @extend .our-work__list-label--purple;
+    }
+    
+    &-premium::after {
+        content: "premium";
+//        @extend .our-work__list-label--yellow;
+    }
+}
+
+h1, h2, h3, h4, h5, button {
+    @extend %font-fira;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+body, p, small {
+    @extend %font-muli;
+    
+}
+
+.logo-list__ {
+    
+    &container {
+        
+        @include flex;
+        max-width: 1000px;
+        @extend %margin-auto;
+        padding: 2rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &item {
+        display: inline-block;
+        
+    }
+    
+    &img {
+        margin: 1rem;
+    }
+}

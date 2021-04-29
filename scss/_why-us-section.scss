@@ -1,0 +1,65 @@
+.why-us__ {
+    
+    &container {
+        text-align: center;
+        @include flex(column);
+        @extend %section-padding;
+    }
+        
+    &header {
+        @extend %header-width;
+        @extend %margin-auto;
+        @extend %header-mb;
+        margin-top: 0;
+//        font-size: 3rem;
+    }
+    
+    &list- {
+        
+        &desc {
+//            @include bd;
+            padding: 1rem;
+        }
+        
+        &-container {
+//            padding: 1.5rem;
+            @extend %margin-auto;
+    //        margin-top: 62px;
+            margin-bottom: 0;
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
+            @extend .hero__main;
+
+            & > li { 
+                margin: 1rem;
+                flex: 0 1 350px;
+                min-width: 150px;
+    //            padding: 30px;
+                font-size: 1rem;
+
+            }
+        }
+    }
+    
+    &icon-container {
+        position: relative; 
+        height: 120px;
+    }
+    
+    &shape, &icon {
+        position: absolute;
+        left: 50%; top: 50%; 
+        transform: translate(-50%, -50%);
+    }
+        
+    &shape {
+        width: 150px;
+    }
+        
+    &icon {        
+        width: 70px;
+
+    }
+        
+}

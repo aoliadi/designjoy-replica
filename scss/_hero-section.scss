@@ -1,0 +1,56 @@
+.hero__ {
+    
+    &container {
+        text-align: center;
+        @extend %section-padding;
+        @extend %margin-auto;
+        @extend %container-width;
+    }
+    
+    &main {
+        @extend %margin-auto;
+        @extend %container-width;
+
+        &--header {
+            font-weight: $weight700;
+            font-size: 4rem;
+            @extend %header-width;
+            @extend %margin-auto;
+            @extend %header-mb;
+        }
+
+        &--paragraph {
+            font-size: 2rem;
+            font-weight: $weight400;
+            font-size: 1.2rem;
+    //        font-size: 20px;
+        }
+
+        &--small {
+            display: block;
+            font-size: 0.8rem;
+        }
+    }
+        
+    &aside {
+
+        &--illustration {
+            max-width: 1000px;
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+    }
+        
+    &partners {
+        @include flex;
+        max-width: 1000px;
+        @extend %margin-auto;
+        padding: 2rem;
+        justify-content: space-around;
+        
+        > img {
+            margin: 1rem;
+        }
+    }
+    
+}

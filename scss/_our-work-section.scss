@@ -1,0 +1,115 @@
+.our-work__ {
+    
+    &container {
+        background-color: $feature-color;
+//        @include bd(green);
+        @extend %ta-center;
+        @extend %section-padding;
+    }
+    
+    &header, &sub-header {
+        @extend %ta-center;
+        @extend %header-width;
+        @extend %margin-auto;
+    }
+    
+//    &header {
+//    }
+    
+    &sub-header {
+        font-family: 'Muli', sans-serif;;
+//        font-weight: normal;
+//        font-size: 1rem;
+        margin-top: 0.5rem;
+        @extend %header-mb;
+    }
+    
+    &list- {
+        
+        &container {
+            text-align: left;
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
+            @extend %container-width;
+            @extend %margin-auto;
+        }
+        
+        &item {
+//            @include bd(blue);
+            flex: 0 1 400px;
+            margin: 1.5rem;
+//            margin-top: 1.5rem;
+//            max-width: 200px;
+            @include flex(column);
+//            justify-content: stretch;
+            
+            > div:first-of-type {
+//                @include bd;
+                background-color: $white-color;
+                overflow: hidden;
+            }
+            
+            img {
+//                @include bd;
+                cursor: pointer;
+                transition: all ease-out 1s;
+                
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        
+        &bottom {
+            background-color: $white-color;
+            padding: 1.5rem 2rem;
+//            margin: 0;
+//            text-align: right;
+
+        }
+        
+        &header {
+//            @include bd;
+            
+//            text-align: right;
+            font-size: 1rem;
+            font-weight: $weight800;
+        }
+        
+        &desc {
+            font-size: 1rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+//            text-align: right;
+//            font-weight: $weight700;
+        }
+        
+        &label {
+//            @include bd;
+            text-align: right;
+            
+            > * {
+                @extend %labels;
+//                @include bd(red);
+//                text-transform: uppercase;
+            }
+
+            &--purple {
+                background-color: $btn-bg-color;
+                color: $cta-color;
+            }
+
+            &--yellow {
+    //            background-color: $btn-bg-color;
+//                color: $cta-color;
+            }
+        }
+    }
+    
+    &aside-header {
+//            @include bd;
+        margin-top: 2.5rem;
+    }
+}
+

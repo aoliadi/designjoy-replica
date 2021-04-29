@@ -1,0 +1,119 @@
+.footer__ {
+    &container {
+        background-color: black;
+        @extend %white-font;
+        @extend %section-padding;
+    }
+    
+    &flex {
+        &-container {
+//            font-size: 1rem;
+            padding: 5rem 0 0;
+            @extend %margin-auto;
+            @extend %container-width;
+            @include flex;
+            justify-content: space-between;
+            
+            > * {
+//                @include bd;
+                padding: 0 2rem;
+//                font-size: 1rem;
+            }
+        }
+        
+        &1 {
+            &-sub-header {
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+        }
+        
+        &2 {
+            > li {
+                margin: 0 0 0.8rem;
+                font-size: 1rem;
+                color: grey;
+                
+                &:first-of-type {
+                    font-weight: $weight700;
+                    color: $white-color;
+                }
+                
+            }
+        }
+    }
+    
+    &btn {
+        border: none;
+    }
+    
+    &link {
+        
+        &:hover {
+            text-decoration: underline;
+            color: $white-color;
+        }
+    }
+} 
+
+.faq__ {
+    
+    &container {
+//        @include bd(red);
+        @extend %container-width;
+        @extend %margin-auto;
+        padding-bottom: 5rem;
+//        @extend %section-padding;
+        font-size: 1rem;
+    }
+    
+    &question {
+        @include bd;
+//        font-size: 1.25rem;
+        @extend %header-width;
+//        @extend %header-mb;
+        @extend %margin-auto;
+        padding: 1rem 0;
+        position: relative;
+        font-weight: $weight400;
+
+        &::after {
+//            content: url(../images/plus.svg);
+            content: "+";
+            font-size: 1.5rem;
+            position: absolute;
+            right: 5%;
+            cursor: pointer;
+                
+        }
+    }
+    
+    &answer {
+        @include bd(red);
+        @extend %header-width;
+        @extend %header-mb;
+        @extend %margin-auto;
+        transition: all 2s ease-in-out;
+//        display: none;
+    }
+    
+    &aside- {
+        &container {
+//            @include bd;
+            @extend %margin-auto;
+            @extend %container-width;
+            border: 1px solid; 
+            padding: 2.5rem 0;
+            border-color: $white-color transparent;
+        }
+        &header {
+            padding: 2rem 1rem 0;
+//            @include bd;
+            @extend %header-width;
+//            @extend %header-mb;
+            @extend %margin-auto;
+            @extend %ta-center;
+        }
+    } 
+}
+
